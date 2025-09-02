@@ -1,4 +1,4 @@
-# H1 URL Shortener
+# URL Shortener
 
 This program is a simple project that takes a link and returns its shortened version.
 It first checks the validity of the link using the urllib.request library. If the response status code is 200, the program proceeds; otherwise, it notifies the user that the link is invalid.
@@ -6,7 +6,6 @@ It first checks the validity of the link using the urllib.request library. If th
 For valid links, the program encodes the URL using the urllib.parse library and appends the last 9 characters of the encoded string to the template domain https://short.url/. This approach helps prevent repetition and ensures the uniqueness of each shortened link.
 
 All links are saved in a JSON file in the following format:
-```python 
 {
     shortened_link: original link,
     shortened_link: original link,
